@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
-import { ArrowDown, ShieldCheck, Sparkles } from 'lucide-react';
+import { ShieldCheck, Sparkles } from 'lucide-react';
 
 import { ButtonLink } from '@/components/ui/button';
 import { Reveal } from '@/components/ui/reveal';
@@ -38,16 +38,17 @@ export function Hero() {
     >
       <motion.div style={{ y: imageY, scale: imageScale }} className="absolute inset-0 -z-10">
         <Image
-          src="/images/hero-reading-room.jpg"
-          alt="A grand university reading room lined with desks and lamps"
+          src="/images/hero-long-room.jpg"
+          alt="The Long Room — a grand two-storey library corridor lined with towering shelves of leather-bound volumes"
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-cover opacity-[0.42]"
         />
       </motion.div>
 
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-950 via-ink-950/80 to-ink-950" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-950/85 via-ink-950/70 to-ink-950" />
+      <div className="absolute inset-y-0 left-0 -z-10 w-3/4 bg-gradient-to-r from-ink-950 via-ink-950/90 to-transparent" />
       <div className="pointer-events-none absolute inset-0 -z-10 bg-grid-ink opacity-40" />
       <div
         aria-hidden
@@ -157,20 +158,6 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-          className="mt-16 hidden items-center gap-3 text-[0.75rem] uppercase tracking-[0.24em] text-ink-400 md:flex"
-        >
-          <motion.span
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <ArrowDown className="size-4" />
-          </motion.span>
-          Scroll
-        </motion.div>
       </motion.div>
     </section>
   );

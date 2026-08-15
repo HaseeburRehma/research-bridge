@@ -107,22 +107,17 @@ export function Header() {
                         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                         exit={{ opacity: 0, y: 6, filter: 'blur(4px)' }}
                         transition={{ duration: 0.28, ease: EASE }}
-                        className="absolute left-1/2 top-full w-[min(30rem,90vw)] -translate-x-1/2 pt-3"
+                        className="absolute left-1/2 top-full w-[min(17rem,90vw)] -translate-x-1/2 pt-3"
                       >
                         <div className="overflow-hidden rounded-2xl border border-paper-300 bg-paper-50/95 p-2 shadow-[0_30px_60px_-24px_rgba(11,18,38,0.28)] backdrop-blur-xl">
-                          <ul className="grid gap-0.5 sm:grid-cols-2">
+                          <ul className="grid gap-0.5">
                             {item.children.map((child) => (
                               <li key={child.href}>
                                 <Link
                                   href={child.href}
-                                  className="group/link block rounded-xl px-3.5 py-3 transition-colors duration-200 hover:bg-brand-50"
+                                  className="block rounded-xl px-4 py-2.5 text-[0.9rem] font-medium text-ink-800 transition-colors duration-200 hover:bg-brand-50 hover:text-brand-700"
                                 >
-                                  <span className="block text-[0.9rem] font-medium text-ink-900 transition-colors group-hover/link:text-brand-700">
-                                    {child.label}
-                                  </span>
-                                  <span className="mt-0.5 block text-[0.78rem] leading-snug text-ink-400">
-                                    {child.blurb}
-                                  </span>
+                                  {child.label}
                                 </Link>
                               </li>
                             ))}
