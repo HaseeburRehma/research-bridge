@@ -4,12 +4,11 @@ export const site = {
   parent: "Research Dexa",
   domain: "researchbridge.com.pk",
   url: "https://www.researchbridge.com.pk",
-  phoneDisplay: "+92 333 9381201",
-  phoneHref: "tel:+923339381201",
-  whatsapp: "https://wa.me/923339381201",
+  phoneDisplay: "07479 595877",
+  phoneHref: "tel:+447479595877",
+  whatsapp: "https://wa.me/447479595877",
   whatsappText:
-    "https://wa.me/923339381201?text=Hi%20Research%20Bridge%20%E2%80%94%20I%27d%20like%20to%20discuss%20a%20research%20project.",
-  hours: "Monday–Saturday, 10:00 AM–7:00 PM (PKT)",
+    "https://wa.me/447479595877?text=Hi%20Research%20Bridge%20%E2%80%94%20I%27d%20like%20to%20discuss%20a%20research%20project.",
   motto: "Every great researcher needs a great team. We are that team.",
 } as const;
 

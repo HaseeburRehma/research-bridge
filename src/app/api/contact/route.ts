@@ -65,7 +65,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          'The contact form is not fully configured yet. Please call or WhatsApp us on +92 333 9381201 and we will reply the same day.',
+          'The contact form is not fully configured yet. Please call or WhatsApp us on 07479 595877 and we will reply the same day.',
       },
       { status: 503 },
     );
@@ -94,7 +94,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          'We could not send that just now. Please try again, or reach us on +92 333 9381201.',
+          'We could not send that just now. Please try again, or reach us on 07479 595877.',
       },
       { status: 502 },
     );

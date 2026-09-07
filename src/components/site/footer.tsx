@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Clock, MessageCircle, Phone, Globe } from 'lucide-react';
+import { MessageCircle, Phone, Globe } from 'lucide-react';
 
 import { footerNav, site } from '@/content/site';
 import { BrandMark, Logo } from './logo';
@@ -51,10 +51,6 @@ export function Footer() {
               <li className="inline-flex items-center gap-3 text-ink-300">
                 <Globe className="size-4 text-brand-400" />
                 www.{site.domain}
-              </li>
-              <li className="flex items-start gap-3 text-ink-300">
-                <Clock className="mt-0.5 size-4 shrink-0 text-brand-400" />
-                {site.hours}
               </li>
             </ul>
 

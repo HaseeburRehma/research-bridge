@@ -92,9 +92,8 @@ export default function ContactPage() {
                   <div className="mt-7 flex items-start gap-3.5 border-t border-white/10 pt-6">
                     <Clock className="mt-0.5 size-4 shrink-0 text-brand-400" />
                     <p className="text-[0.88rem] leading-relaxed text-ink-300">
-                      {site.hours}
-                      <br />
-                      Messages outside these hours are answered the next business day.
+                      Every message is read personally. Expect a reply within one
+                      working day — sooner on WhatsApp.
                     </p>
                   </div>
                 </div>

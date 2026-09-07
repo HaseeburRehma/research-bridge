@@ -7,6 +7,7 @@ import { Header } from '@/components/site/header';
 import { Footer } from '@/components/site/footer';
 import { FloatingContact } from '@/components/site/floating-contact';
 import { SmoothScroll } from '@/components/site/smooth-scroll';
+import { AnnouncementPopup } from '@/components/site/announcement-popup';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -74,7 +75,6 @@ const organizationJsonLd = {
   parentOrganization: { '@type': 'Organization', name: site.parent },
   areaServed: 'Worldwide',
   address: { '@type': 'PostalAddress', addressCountry: 'PK' },
-  openingHours: 'Mo-Sa 10:00-19:00',
   knowsAbout: [
     'Literature review',
     'Research methodology',
@@ -109,6 +109,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           </main>
           <Footer />
           <FloatingContact />
+          <AnnouncementPopup />
         </SmoothScroll>
       </body>
     </html>

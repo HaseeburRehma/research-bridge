@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* ── Trust band ───────────────────────────────────────── */}
+      {/* ── Numbers band ─────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-ink-950 py-20 text-paper-100 md:py-28">
         <Image
           src="/images/library-stacks.jpg"
@@ -108,15 +108,15 @@ export default function HomePage() {
         <div className="container-rb relative">
           <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center">
             <div>
-              <Eyebrow tone="paper">Trusted by researchers worldwide</Eyebrow>
+              <Eyebrow tone="paper">By the numbers</Eyebrow>
               <h2 className="mt-6 max-w-2xl font-display text-[clamp(1.9rem,1.2rem+2.4vw,3rem)] leading-[1.1] text-paper-50">
-                100+ researchers have moved their projects from stuck to submitted
+                A century of researchers moved from stuck to submitted.
               </h2>
               <p className="mt-6 max-w-xl text-[1.02rem] leading-[1.8] text-ink-200">
-                Across the humanities, social sciences, natural sciences, and professional
-                fields. Backed by an established academic institution, our citation
-                standards and quality checks meet the same bar as the journals and
-                committees that will review your work.
+                Across the humanities, social sciences, natural sciences and
+                professional fields &mdash; every engagement meets the same
+                citation and quality bar the journals and committees will hold
+                your work to.
               </p>
 
               <blockquote className="mt-10 border-l-2 border-brand-500 pl-6">
@@ -124,7 +124,7 @@ export default function HomePage() {
                   &ldquo;Every great researcher needs a great team. We are that team.&rdquo;
                 </p>
                 <cite className="mt-3 block text-[0.8rem] not-italic tracking-wide text-ink-400">
-                  — Research Bridge
+                  &mdash; Research Bridge
                 </cite>
               </blockquote>
             </div>
@@ -144,8 +144,7 @@ export default function HomePage() {
         <div className="container-rb">
           <SectionHeading
             eyebrow="Why Research Bridge"
-            title="Rigorous methods, accurate citations, quality you can defend"
-            lead="Three things researchers tell us they could not find elsewhere."
+            title="Three things researchers tell us they could not find elsewhere."
             align="center"
           />
 

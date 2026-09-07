@@ -251,7 +251,6 @@ export function Header() {
                     <MessageCircle className="size-4" /> WhatsApp
                   </ButtonLink>
                 </div>
-                <p className="mt-3 text-center text-sm text-ink-400">{site.hours}</p>
               </div>
             </div>
           </motion.div>

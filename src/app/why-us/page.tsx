@@ -20,7 +20,7 @@ export default function WhyUsPage() {
       <PageHero
         eyebrow="Why choose Research Bridge"
         title="What Sets Us Apart"
-        lead="Rigorous methods, accurate citations, quality you can defend — held to the standard your work will actually be judged by."
+        lead="Held to the standard your work will actually be judged by &mdash; the committee, the reviewer, the examiner."
         image="/images/testimonials-library.jpg"
         imageAlt="Students studying in a historic library"
         crumbs={[{ href: '/why-us', label: 'Why Choose Us' }]}

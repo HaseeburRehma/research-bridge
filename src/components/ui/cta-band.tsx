@@ -64,7 +64,7 @@ export function CtaBand({
 
             <Reveal delay={0.35}>
               <p className="mt-8 text-[0.82rem] text-ink-400">
-                {site.hours} · No obligation, no generic pitch.
+                Replies within one working day — no obligation, no generic pitch.
               </p>
             </Reveal>
           </div>

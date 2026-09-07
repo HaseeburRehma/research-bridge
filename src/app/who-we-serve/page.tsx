@@ -20,7 +20,7 @@ export default function WhoWeServePage() {
       <PageHero
         eyebrow="Who we serve"
         title="Scholars, Students, Faculty & Institutions"
-        lead="Rigorous methods, accurate citations, quality you can defend — support at every stage from proposal to publication, scoped to who you are and where you are stuck."
+        lead="Every engagement is scoped to who you are and where you&rsquo;re stuck — from an undergraduate proposal that needs its shape, to a departmental cohort heading into thesis season."
         image="/images/who-students.jpg"
         imageAlt="Researchers collaborating around a laptop"
         crumbs={[{ href: '/who-we-serve', label: 'Who We Serve' }]}
@@ -80,8 +80,9 @@ export default function WhoWeServePage() {
           <Reveal>
             <figure className="mx-auto max-w-3xl text-center">
               <blockquote className="font-display text-[clamp(1.4rem,1rem+1.6vw,2.15rem)] leading-[1.3] text-ink-900">
-                &ldquo;Rigorous methods, accurate citations, quality you can defend —
-                support at every stage from proposal to publication.&rdquo;
+                &ldquo;Every great researcher needs a great team &mdash; and a
+                team that stays consistent from the first outline to the final
+                submission.&rdquo;
               </blockquote>
               <figcaption className="mt-6 text-[0.8rem] uppercase tracking-[0.2em] text-ink-400">
                 Research Bridge
