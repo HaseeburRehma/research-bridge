@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import { MessageCircle, Phone, Globe } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 import { footerNav, site } from '@/content/site';
 import { BrandMark, Logo } from './logo';
-import { ButtonLink } from '@/components/ui/button';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -17,46 +16,24 @@ export function Footer() {
       />
 
       <div className="container-rb relative">
-        <div className="grid gap-14 py-16 md:py-20 lg:grid-cols-[1.15fr_2fr]">
+        {/* ── Top: Brand + navigation columns ───────────────── */}
+        <div className="grid gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_2fr] lg:gap-16">
           <div>
             <Link href="/" aria-label={`${site.name} — home`}>
               <Logo tone="paper" />
             </Link>
-            <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-ink-300">
-              Academic research consultancy and writing support for scholars, MPhil and
-              PhD candidates, faculty, and institutions worldwide.
+            <p className="mt-6 max-w-sm text-[0.94rem] leading-relaxed text-ink-300">
+              Academic research consultancy for scholars, MPhil and PhD
+              candidates, faculty, and institutions worldwide.
             </p>
 
-            <ul className="mt-8 space-y-3 text-[0.9rem]">
-              <li>
-                <a
-                  href={site.phoneHref}
-                  className="inline-flex items-center gap-3 text-paper-100 transition-colors hover:text-brand-300"
-                >
-                  <Phone className="size-4 text-brand-400" />
-                  {site.phoneDisplay}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={site.whatsappText}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-paper-100 transition-colors hover:text-brand-300"
-                >
-                  <MessageCircle className="size-4 text-brand-400" />
-                  WhatsApp
-                </a>
-              </li>
-              <li className="inline-flex items-center gap-3 text-ink-300">
-                <Globe className="size-4 text-brand-400" />
-                www.{site.domain}
-              </li>
-            </ul>
-
-            <ButtonLink href="/contact" variant="ghostLight" size="sm" arrow className="mt-8">
+            <Link
+              href="/contact"
+              className="group mt-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[0.86rem] font-medium text-paper-100 backdrop-blur transition-colors hover:border-brand-400/50 hover:bg-brand-500/15 hover:text-paper-50"
+            >
               Start a conversation
-            </ButtonLink>
+              <ArrowUpRight className="size-3.5 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </Link>
           </div>
 
           <div className="grid gap-10 sm:grid-cols-3">
@@ -82,27 +59,28 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Parent institution — the RD lockup carried in the wordmark */}
-        <div className="flex flex-col gap-8 border-t border-white/10 py-10 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-5">
-            <div className="flex h-16 items-center justify-center rounded-xl bg-white/95 px-4 shadow-[0_10px_28px_-14px_rgba(11,18,38,0.6)]">
-              <BrandMark variant="lockup" size={42} />
+        {/* ── Parent lockup ─────────────────────────────────── */}
+        <div className="flex flex-col gap-6 border-t border-white/10 py-8 sm:flex-row sm:items-center sm:justify-between md:py-10">
+          <div className="flex items-center gap-4 sm:gap-5">
+            <div className="flex h-14 items-center justify-center rounded-xl bg-white/95 px-3.5 shadow-[0_10px_28px_-14px_rgba(11,18,38,0.6)] sm:h-16 sm:px-4">
+              <BrandMark variant="lockup" size={36} />
             </div>
-            <p className="max-w-xs text-[0.82rem] leading-relaxed text-ink-400">
-              Backed by <span className="text-ink-200">Research Dexa</span> — an established
-              research and legal-thought centre.
+            <p className="max-w-xs text-[0.8rem] leading-relaxed text-ink-400 sm:text-[0.82rem]">
+              Backed by <span className="text-ink-200">Research Dexa</span> — an
+              established research and legal-thought centre.
             </p>
           </div>
-          <p className="max-w-md text-[0.82rem] leading-relaxed text-ink-400">
+          <p className="max-w-md text-[0.8rem] leading-relaxed text-ink-400 sm:text-[0.82rem]">
             &ldquo;{site.motto}&rdquo;
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-white/10 py-7 text-[0.8rem] text-ink-400 sm:flex-row sm:items-center sm:justify-between">
+        {/* ── Legal ─────────────────────────────────────────── */}
+        <div className="flex flex-col gap-4 border-t border-white/10 py-6 text-[0.78rem] text-ink-400 sm:flex-row sm:items-center sm:justify-between md:py-7 md:text-[0.8rem]">
           <p>
             © {year} {site.name}. All rights reserved.
           </p>
-          <nav aria-label="Legal" className="flex flex-wrap gap-x-6 gap-y-2">
+          <nav aria-label="Legal" className="flex flex-wrap gap-x-5 gap-y-2 sm:gap-x-6">
             <Link href="/privacy" className="transition-colors hover:text-paper-100">
               Privacy Policy
             </Link>
@@ -111,9 +89,6 @@ export function Footer() {
             </Link>
             <Link href="/integrity" className="transition-colors hover:text-paper-100">
               Academic Integrity
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-paper-100">
-              Contact
             </Link>
           </nav>
         </div>

@@ -134,7 +134,7 @@ export function Header() {
               <a
                 href={site.phoneHref}
                 className={cn(
-                  'rounded-full px-3 py-2 text-sm font-medium transition-colors',
+                  'rounded-full px-2.5 py-2 text-[0.8125rem] font-medium transition-colors xl:text-sm',
                   onDark
                     ? 'text-ink-200 hover:text-paper-50'
                     : 'text-ink-500 hover:text-ink-900',
@@ -142,8 +142,14 @@ export function Header() {
               >
                 {site.phoneDisplay}
               </a>
-              <ButtonLink href="/contact" size="sm" arrow>
-                Start a conversation
+              <ButtonLink
+                href="/contact"
+                size="sm"
+                arrow
+                className="text-[0.78rem] xl:text-[0.8125rem]"
+              >
+                <span className="hidden xl:inline">Start a conversation</span>
+                <span className="xl:hidden">Contact</span>
               </ButtonLink>
             </div>
 
